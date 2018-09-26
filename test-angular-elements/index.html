@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple angular elements</title>
+  <!-- Polyfills for Browsers supporting
+        Custom Elements. Needed b/c we downlevel
+        to ES5. See: @webcomponents/custom-elements
+    -->
+    <script src="./extern/native-shim.js"></script>
+
+    <!-- Polyfills for Browsers not supporting
+        Custom Elements. See: @webcomponents/custom-elements
+    -->
+    <script src="./extern/custom-elements.min.js"></script>
+
+    <!-- Zone.js -->
+    <!--
+    Consider excluding zone.js when creating
+    Custom Elements by using the noop zone.
+    -->
+    <script src="./extern/zone.js"></script>
+
+    <!-- Rx -->
+    <script src="./extern/rxjs.umd.js"></script>
+
+    <!-- Angular Packages -->
+    <script src="./extern/core.umd.js"></script>
+    <script src="./extern/common.umd.js"></script>
+    <script src="./extern/compiler.umd.js"></script>
+    <script src="./extern/platform-browser.umd.js"></script>
+    <script src="./extern/platform-browser-dynamic.umd.js"></script>
+    <script src="./extern/elements.umd.js"></script>
+
+    <script src="./angular-element-a/main.js"></script>
+    <script src="./angular-element-b/main.js"></script>
+</head>
+
+<body>
+  <angular-element-a title="Hello"></angular-element-a>
+  <angular-element-b title="Yes"></angular-element-b>
+</body>
+
+</html>

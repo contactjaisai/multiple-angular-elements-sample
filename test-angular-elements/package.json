@@ -1,0 +1,14 @@
+{
+  "name": "test-angular-elements",
+  "version": "1.0.0",
+  "description": "test angular elements",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
